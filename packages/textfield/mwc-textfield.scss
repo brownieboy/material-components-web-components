@@ -34,19 +34,32 @@ limitations under the License.
   display: inline-flex;
   flex-direction: column;
   outline: none;
-  .mdc-text-field--filled span.mdc-floating-label {
-    left: initial;
-    right: initial;
+  .mdc-text-field span.mdc-floating-label {
+    left: auto;
+    right: auto;
   }
 
-  .mdc-text-field--filled.mdc-text-field--with-leading-icon
+  .mdc-text-field.mdc-text-field--with-leading-icon
     .mdc-floating-label {
     margin-inline-start: 48px;
   }
 
-  .mdc-text-field--with-trailing-icon {
-    padding-right: 16px;
+  .mdc-text-field--outlined .mdc-floating-label {
+    left: auto;
+    right: auto;
+    margin-inline-start: 4px;
   }
+
+  .mdc-text-field--with-leading-icon.mdc-text-field--outlined .mdc-floating-label {
+    margin-inline-start: 36px;
+  }
+
+  .mdc-text-field--with-trailing-icon {
+    padding-left: unset;
+    padding-right: unset;
+    padding-inline-start: 16px;
+  }
+
 }
 
 .mdc-text-field {
