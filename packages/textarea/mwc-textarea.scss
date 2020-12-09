@@ -22,3 +22,14 @@ limitations under the License.
 .mdc-text-field__input {
   resize: none;
 }
+
+:host {
+  .mdc-text-field--textarea {
+    align-items: flex-start;
+  }
+  .mdc-floating-label {
+    left: auto;
+    right: auto;
+    margin-inline-start: 16px;
+  }
+}
